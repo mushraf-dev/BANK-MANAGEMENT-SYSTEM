@@ -1,4 +1,3 @@
-
 public class Bank {
     String bankName;
     int userId;
@@ -41,12 +40,6 @@ public class Bank {
         return balance >= minimumBalance;
     }
 
-    boolean withdrawAmount(double amount) {
-        if (amount <= balance) {
-            balance -= amount;
-            return true;
-        }
-        return false;
-    }
+
 
 }

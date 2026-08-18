@@ -1,0 +1,116 @@
+=== TEST CASE INPUTS ===
+Bank Name: National Bank
+User ID: 1001
+User Name: Alice Smith
+Account Number: 9876543210
+Account Type: Savings
+Balance: 1500.00
+
+Menu Selections and Inputs:
+1. Enter choice: 1 (Display Bank Details)
+2. Enter choice: 2 (Display User Details)
+3. Enter choice: 3 (Display Account Details)
+4. Enter choice: 4 (View Account Summary)
+5. Enter choice: 5 (Check Minimum Balance Status), Min Balance Input: 1000.0
+6. Enter choice: 6 (Exit / Terminate program)
+
+================================================================================
+
+=== RUNTIME CONSOLE OUTPUT (SIMULATED INPUT + OUTPUT FLOW) ===
+=============================================
+       ENTER BANK ACCOUNT DETAILS           
+=============================================
+Enter Bank Name: National Bank
+Enter User ID: 1001
+Enter User Name: Alice Smith
+Enter Account Number: 9876543210
+Enter Account Type: Savings
+Enter Balance: 1500.00
+
+=============================================
+       WELCOME TO THE BANKING SYSTEM        
+=============================================
+
+--- MAIN MENU ---
+1. Display Bank Details
+2. Display User Details
+3. Display Account Details
+4. View Account Summary
+5. Check Minimum Balance Status
+6. Withdraw Amount
+7. Exit
+Please enter your choice (1-7): 1
+
+--- Bank Details ---
+Bank Name: National Bank
+
+--- MAIN MENU ---
+1. Display Bank Details
+2. Display User Details
+3. Display Account Details
+4. View Account Summary
+5. Check Minimum Balance Status
+6. Withdraw Amount
+7. Exit
+Please enter your choice (1-7): 2
+
+--- User Details ---
+User Id: 1001
+User Name: Alice Smith
+
+--- MAIN MENU ---
+1. Display Bank Details
+2. Display User Details
+3. Display Account Details
+4. View Account Summary
+5. Check Minimum Balance Status
+6. Withdraw Amount
+7. Exit
+Please enter your choice (1-7): 3
+
+--- Account Details ---
+Account Number: 9876543210
+Account Type: Savings
+Balance: 1500.0
+
+--- MAIN MENU ---
+1. Display Bank Details
+2. Display User Details
+3. Display Account Details
+4. View Account Summary
+5. Check Minimum Balance Status
+6. Withdraw Amount
+7. Exit
+Please enter your choice (1-7): 4
+
+--- Account Summary ---
+Bank Name: National Bank
+User Name: Alice Smith
+Account Number: 9876543210
+Account Type: Savings
+Balance: 1500.0
+
+--- MAIN MENU ---
+1. Display Bank Details
+2. Display User Details
+3. Display Account Details
+4. View Account Summary
+5. Check Minimum Balance Status
+6. Withdraw Amount
+7. Exit
+Please enter your choice (1-7): 5
+
+Enter minimum balance to check: 1000.0
+Yes, account has minimum balance of 1000.0. Current balance: 1500.0
+
+--- MAIN MENU ---
+1. Display Bank Details
+2. Display User Details
+3. Display Account Details
+4. View Account Summary
+5. Check Minimum Balance Status
+6. Withdraw Amount
+7. Exit
+Please enter your choice (1-7): 6
+
+Thank you for using the Banking System. Goodbye!
