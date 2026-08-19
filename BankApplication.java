@@ -44,8 +44,11 @@ public class BankApplication {
             System.out.println("3. Display Account Details");
             System.out.println("4. View Account Summary");
             System.out.println("5. Check Minimum Balance Status");
-            System.out.println("6. Exit");
-            System.out.print("Please enter your choice (1-7): ");
+            System.out.println("6. Withdraw Amount");
+            System.out.println("7. Deposit Amount");
+            System.out.println("8. Check Balance");
+            System.out.println("9. Exit");
+            System.out.print("Please enter your choice (1-9): ");
 
             int choice = scanner.nextInt();
             scanner.nextLine(); // Clear scanner buffer
@@ -73,12 +76,38 @@ public class BankApplication {
                     double minBal = scanner.nextDouble();
                     scanner.nextLine(); // Clear scanner buffer
                     if (myBank.hasMinimumBalance(minBal)) {
-                        System.out.println("Yes, account has minimum balance of " + minBal + ". Current balance: " + myBank.balance);
+                        System.out.println("Yes, account has minimum balance of " + minBal + ". Current balance: "
+                                + myBank.balance);
                     } else {
-                        System.out.println("No, account does not have minimum balance of " + minBal + ". Current balance: " + myBank.balance);
+                        System.out.println("No, account does not have minimum balance of " + minBal
+                                + ". Current balance: " + myBank.balance);
                     }
                     break;
                 case 6:
+                    System.out.print("Enter amount to withdraw: ");
+                    double withdrawAmt = scanner.nextDouble();
+                    scanner.nextLine(); // Clear scanner buffer
+                    if (myBank.withdraw(withdrawAmt)) {
+                        System.out.println("Withdrawal successful! Remaining balance: " + myBank.balance);
+                    } else {
+                        System.out
+                                .println("Withdrawal failed! Insufficient balance. Current balance: " + myBank.balance);
+                    }
+                    break;
+                case 7:
+                    System.out.print("Enter amount to deposit: ");
+                    double depositAmt = scanner.nextDouble();
+                    scanner.nextLine(); // Clear scanner buffer
+                    if (myBank.deposit(depositAmt)) {
+                        System.out.println("Deposit successful! New balance: " + myBank.balance);
+                    } else {
+                        System.out.println("Deposit failed! Invalid amount. Current balance: " + myBank.balance);
+                    }
+                    break;
+                case 8:
+                    System.out.print("current Balance: "+myBank.checkBalance());
+                    break;
+                case 9:
                     System.out.println("Thank you for using the Banking System. Goodbye!");
                     running = false;
                     break;
